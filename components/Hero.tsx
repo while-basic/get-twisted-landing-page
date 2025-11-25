@@ -6,24 +6,24 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
-    <section className="relative w-full min-h-[70vh] flex flex-col items-center justify-start pt-24 pb-12 px-4 text-center overflow-hidden bg-gradient-to-b from-[#EBD9FC] to-white">
+    <section className="relative w-full flex flex-col items-center justify-start pb-8 px-4 text-center overflow-hidden bg-gradient-to-b from-[#EBD9FC] to-white">
       {/* Decorative Blobs */}
       <div className="blob bg-purple-300 w-96 h-96 rounded-full top-0 left-0 opacity-60 mix-blend-multiply filter blur-3xl animate-blob"></div>
       <div className="blob bg-teal-200 w-96 h-96 rounded-full bottom-0 right-0 opacity-60 mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-      <div className="blob bg-pink-200 w-80 h-80 rounded-full top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-60 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="blob bg-pink-200 w-80 h-80 rounded-full top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-60 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
       
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col items-center max-w-5xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center max-w-5xl mx-auto gap-3" style={{ marginTop: '-900px' }}>
         
         {/* Animated Badge */}
-        <div className="relative group cursor-pointer mb-8 transform hover:scale-105 transition-all duration-500">
-            <div className="w-64 h-64 md:w-80 md:h-80 bg-[#590059] rounded-full flex items-center justify-center border-[8px] border-[#8A2BE2] shadow-[0px_20px_50px_rgba(138,43,226,0.5)] relative z-10 transition-transform duration-500 group-hover:rotate-3 overflow-hidden">
+        <div className="relative group cursor-pointer transform hover:scale-105 transition-all duration-500">
+            <div className="w-56 h-56 md:w-72 md:h-72 bg-[#590059] rounded-full flex items-center justify-center border-[8px] border-[#8A2BE2] shadow-[0px_20px_50px_rgba(138,43,226,0.5)] relative z-10 transition-transform duration-500 group-hover:rotate-3 overflow-visible">
             
             {/* Spinning rays background effect */}
             <div className="absolute inset-0 bg-[repeating-conic-gradient(from_0deg,#6A0DAD_0deg_20deg,#590059_20deg_40deg)] opacity-20 animate-[spin_20s_linear_infinite]"></div>
 
-            <div className="flex flex-col items-center justify-center text-white z-20 relative">
-                <h2 className="text-4xl md:text-6xl font-display uppercase tracking-widest text-center transform -translate-y-4 drop-shadow-[4px_4px_0_#000]">
+            <div className="flex flex-col items-center justify-center text-white z-20 relative px-4 py-2">
+                <h2 className="text-3xl md:text-5xl font-display uppercase tracking-widest text-center drop-shadow-[4px_4px_0_#000]">
                 Get<br/>Twisted
                 </h2>
                 
@@ -57,11 +57,11 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         </div>
 
         {/* Main Text & CTA */}
-        <h1 className="text-6xl md:text-8xl font-display font-black mb-6 leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-teal-500 drop-shadow-sm">
+        <h1 className="text-6xl md:text-8xl font-display font-black leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-teal-500 drop-shadow-sm">
             COMING SOON!!!
         </h1>
 
-        <p className="mb-10 text-2xl md:text-3xl text-purple-900 font-sans max-w-3xl font-bold leading-relaxed">
+        <p className="text-2xl md:text-3xl text-purple-900 font-sans max-w-3xl font-bold leading-relaxed">
             Twist up your day with <span className="bg-purple-200 px-2 rounded-lg transform -rotate-2 inline-block text-purple-800">bold flavors</span>, 
             <span className="bg-teal-100 px-2 rounded-lg transform rotate-2 inline-block text-teal-700 mx-2">cool colors</span>, 
             and a <span className="text-pink-500 underline decoration-wavy decoration-2">whole lotta attitude</span>.

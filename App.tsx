@@ -25,7 +25,7 @@ const App: React.FC = () => {
           <>
             <Hero onNavigate={setCurrentPage} />
             {/* Home Page Teaser Content */}
-            <div className="w-full max-w-7xl px-4 py-12 mx-auto">
+            <div className="w-full max-w-7xl px-4 py-8 mx-auto">
                <div className="bg-white/50 backdrop-blur-md border-4 border-purple-200 rounded-3xl p-8 md:p-12 text-center shadow-[8px_8px_0px_0px_rgba(107,33,168,0.2)]">
                   <h3 className="text-4xl font-display text-purple-900 mb-4">Why Get Twisted?</h3>
                   <div className="grid md:grid-cols-3 gap-8 mt-8">
@@ -56,7 +56,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center overflow-x-hidden selection:bg-pink-300 selection:text-purple-900 bg-purple-50">
       <Header onNavigate={setCurrentPage} currentPage={currentPage} />
       
-      <main className="flex-grow w-full pt-20">
+      <main className="flex-grow w-full pt-0">
         {renderPage()}
       </main>
 
